@@ -1,8 +1,8 @@
-export type license = `MINTY-${string}-${string}-${string}`;
+export type License = `MINTY-${string}-${string}-${string}`;
 
-export type email = `${string}@${string}.${string}`;
+export type Email = `${string}@${string}.${string}`;
 
-export type licenseTypes =
+export type LicenseTypes =
 	| "developer"
 	| "renewal"
 	| "monthly"
@@ -11,4 +11,5 @@ export type licenseTypes =
 	| "fnf"
 	| "staff"
 	| "administrator"
-	| "owner";
+	| "owner"
+	| "beta";

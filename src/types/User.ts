@@ -1,13 +1,13 @@
-import { email, license, licenseTypes } from "./types";
+import { Email, License, LicenseTypes } from "./types";
 import UserMetadata from "./UserMetadata";
 
 export default interface User {
 	id: number;
 	name: string;
-	email: email;
+	email: Email;
 	created_at: Date;
 	updated_at: Date;
-	license: license;
-	license_type: licenseTypes;
+	license: License;
+	license_type: LicenseTypes;
 	metadata: UserMetadata;
 }
