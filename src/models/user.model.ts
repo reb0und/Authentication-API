@@ -38,7 +38,7 @@ export async function CreateUser(
 
 	const emailExists = await getUserByEmail(email);
 	if (emailExists) {
-		throw new ApiError(httpStatus.BAD_REQUEST, "Email alread exists");
+		throw new ApiError(httpStatus.BAD_REQUEST, "Email already exists");
 	} else {
 		const user = new UserModel({
 			name: name ? name : null,
@@ -46,6 +46,7 @@ export async function CreateUser(
 			license: createLicense(),
 			license_type: licenseType,
 			created_at: new Date(),
+			is_bound: false,
 		}).save();
 		return user;
 	}

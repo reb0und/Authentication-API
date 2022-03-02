@@ -1,5 +1,4 @@
-import { Email, License, LicenseTypes } from "./types";
-import UserMetadata from "./UserMetadata";
+import { Email, License, LicenseTypes, UserMetadata } from "./types";
 
 export default interface User {
 	id: number;
