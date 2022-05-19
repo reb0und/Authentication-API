@@ -1,9 +1,9 @@
 {
-	"name": "MintyyBot-Authentication",
+	"name": "Authentication-API",
 	"version": "1.0.0",
-	"description": "MintyyBot Authentication API",
+	"description": "Authentication API",
 	"main": "index.js",
-	"repository": "https://github.com/reb0und/MintyyBot-Authentication.git",
+	"repository": "https://github.com/reb0und/Authentication-API.git",
 	"author": "reb0und",
 	"license": "MIT",
 	"private": true,
